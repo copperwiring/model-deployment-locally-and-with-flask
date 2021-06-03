@@ -7,6 +7,9 @@ import imageio
 
 app = Flask(__name__)
 
+# load ml model
+model = joblib.load('model.pkl')
+
 @app.route("/")
 @app.route("/index")
 def index():
@@ -40,7 +43,6 @@ def make_prediction():
 
 
 if __name__ == '__main__':
-	# load ml model
-	model = joblib.load('model.pkl')
+
 	# start api
 	app.run(host='0.0.0.0', port=8000, debug=True)
