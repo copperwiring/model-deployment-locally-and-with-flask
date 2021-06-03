@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.utils import shuffle 
 from sklearn.ensemble import RandomForestClassifier 
 from sklearn.model_selection import train_test_split 
-from sklearn.externals import joblib
+import joblib
 
 # load data file as dict object
 train_data = scipy.io.loadmat('extra_32x32.mat') 

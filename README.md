@@ -8,6 +8,8 @@ To run locally:
 - Clone this repository `git clone https://github.com/elliebirbeck/model-deployment-flask.git`
 - Navigate to the working directory `cd model-deployment-flask`
 - Install the Python dependencies `pip install -r requirements.txt`
+- The project expects an additonal data ` extra_32x32.mat` (not present here due to the size) in the working directory. You can download the data from here: http://ufldl.stanford.edu/housenumbers/ 
+- Get model pickel using `python model.py`.
 - Run the API `python api.py`
 - Open a web browser and go to `http://localhost:8000`
 
