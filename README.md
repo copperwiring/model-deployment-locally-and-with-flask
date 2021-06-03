@@ -1,5 +1,11 @@
 In this tutorial we take the image classification model built in `model.py` which recognises Google Street View House Numbers. Using Flask to create an API, we can deploy this model and create a simple web page to load and classify new images. 
 
+**Deployed Code Live in Action on Web**
+
+Webpage: http://srishti08.pythonanywhere.com/
+
+![Deployed Code In Action](images/test-deployed-code-on-web.gif)
+
 ## To Run Locally:
 
 - Install pip and Python 3
@@ -77,8 +83,4 @@ In above example project directory is set as `‘/home/Srishti08/’` and flask 
 
 ![Website view of the deployed code](images/deployed-web-view.png)
 
-**Deployed Code Live in Action on Web**
 
-Webpage: http://srishti08.pythonanywhere.com/
-
-![Deployed Code In Action](images/test-deployed-code-on-web.gif)
