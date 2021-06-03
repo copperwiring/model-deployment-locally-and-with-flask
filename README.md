@@ -19,13 +19,26 @@ In this tutorial we take the image classification model built in `model.py` whic
 
 ## To Run on Web:
 
-- Create an account with pythonanywhere.
+We will user https://www.pythonanywhere.com/ to host our webage which will show the results of the model prediction. Note, here we will not train the model on server. Rather, we will use the trained model (`model.pkl`) to deserialize on server to make prediction.
+
+- Create an account with [pythonanywhere](https://www.pythonanywhere.com/).
 - Go to Dashboard
 - Click on `console` and a console window will open up.
 
 ![console](images/bash.png)
 
-- Install the dependencies from `requirements.txt`. Example: `pip install scikit-learn==0.21.3`
+- Install the dependencies from `requirements.txt`. Example: `pip install scikit-learn==0.21.3`. You can also do this in a virtual env.
+
+```
+# make virtual environment 
+mkvirtualenv --python=/usr/bin/python3.7 my-virtualenv  
+
+# install required dependencies. See requirement.txt
+pip install scikit-learn==0.21.3
+pip install Flask==2.0.1 
+
+....
+```
 - Initiate web app. 
 
 ![webapp](images/webapp.png)
