@@ -1,10 +1,9 @@
-import flask
+import flask, scipy
 from flask import Flask, request, render_template
 # from sklearn.externals import joblib
 import joblib
 import numpy as np
-from scipy import misc
-
+import imageio
 
 app = Flask(__name__)
 
@@ -24,7 +23,7 @@ def make_prediction():
 		
 		# read in file as raw pixels values
 		# (ignore extra alpha channel and reshape as its a single image)
-		img = misc.imread(file)
+		img = imageio.imread(file)
 		img = img[:,:,:3]
 		img = img.reshape(1, -1)
 

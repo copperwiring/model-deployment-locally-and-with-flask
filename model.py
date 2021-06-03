@@ -1,9 +1,9 @@
 import scipy.io 
 import numpy as np
-from sklearn.utils import shuffle 
-from sklearn.ensemble import RandomForestClassifier 
-from sklearn.model_selection import train_test_split 
 import joblib
+from sklearn.utils import shuffle 
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split 
 
 # load data file as dict object
 train_data = scipy.io.loadmat('extra_32x32.mat') 
